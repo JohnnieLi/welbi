@@ -79,11 +79,8 @@ class Quiz extends React.Component {
     ];
 
 
-
-
     constructor(props) {
         super(props);
-        console.log(props);
         this.state = {
             selectedQuestion: this.questions[0]
         };
@@ -91,11 +88,9 @@ class Quiz extends React.Component {
 
 
     componentDidMount() {
-      console.log("quiz page");
     }
 
     componentWillUnmount() {
-
     }
 
 
@@ -107,7 +102,7 @@ class Quiz extends React.Component {
             result.answer = answer;
             result.isCorrect = (question.answer === answer);
             this.props.dispatch(addResult(result));
-
+            //last one then redirect to result page
             if(index === this.questions.length - 1){
                 this.props.history.push('./result');
             }else{

@@ -12,10 +12,7 @@ class Result extends React.Component {
     constructor(props) {
         super(props);
         this.results = store.getState().results;
-        console.log(this.results);
     }
-
-
 
     componentWillUnmount() {
     }

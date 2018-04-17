@@ -10,6 +10,7 @@ class Introduction extends React.Component {
 
     constructor(props) {
         super(props);
+        //clear the exist store results
         this.props.dispatch(clearResult());
     }
 
@@ -27,9 +28,6 @@ class Introduction extends React.Component {
                     </button>
                </div>
     }
-
-
-
 
 }
 

@@ -5,9 +5,9 @@ export const addResult = result => ({
             answer: result.answer,
             isCorrect: result.isCorrect
         }
-})
+});
 
 export const clearResult = () => ({
     type: 'CLEAR_RESULTS',
-})
+});
 
