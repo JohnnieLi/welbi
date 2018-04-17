@@ -22,7 +22,7 @@ class Introduction extends React.Component {
                     <p className="App-intro">
                         You will be presented with 10 True or False Questions. Can you score 100%?
                     </p>
-                    <button>
+                    <button className="btn">
                         <Link to="/quiz">Start Quiz</Link>
                     </button>
                </div>

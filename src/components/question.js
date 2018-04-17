@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../App.css';
 
 class Question extends React.Component {
     constructor(props) {
@@ -21,10 +21,10 @@ class Question extends React.Component {
                 <p>#{this.props.question.id}  Category : {this.props.question.category}</p>
                 <p>{this.props.question.content}</p>
                 <div>
-                    <button onClick={()=>this.handleClick(true)}>
+                    <button className="btn" onClick={()=>this.handleClick(true)}>
                         True
                     </button>
-                    <button onClick= {()=>this.handleClick(false)}>
+                    <button className="btn" onClick= {()=>this.handleClick(false)}>
                         False
                     </button>
                 </div>

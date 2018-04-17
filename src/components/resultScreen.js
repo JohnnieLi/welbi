@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {connect} from 'react-redux';
 import store from '../store/index';
-
+import '../App.css';
 
 class Result extends React.Component {
 
@@ -34,16 +34,16 @@ class Result extends React.Component {
                         }else{
                             sign = '[-]';
                         }
-                        return <li key={ index }> {sign} {value.answer+''} : {value.content}</li>;
+                            return <li key={ index }><a>{sign} {value.answer+''} : {value.content}</a></li>;
                     })}
                 </ul>
                 <span>With "+" meaning correct and "-" meaning incorrect.</span>
 
-                <div>
+                <div className="score">
                     <p> Your score was {this.score}/10</p>
                 </div>
                 <div>
-                    <button>
+                    <button className="btn">
                         <Link to="/">Take Quiz again</Link>
                     </button>
                 </div>

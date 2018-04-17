@@ -26,3 +26,65 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+
+
+.btn {
+   border: 1px #51926f solid;
+   background-color: whitesmoke;
+   padding: 10px 20px;
+   color: black;
+   transition: background-color 0.5s;
+   width: 200px;
+   height: 50px;
+   font-family: 'Delius', cursive;
+   margin: 20px;
+}
+
+.btn:hover {
+   background-color: #51926f;
+   cursor: pointer;
+ }
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+  width: 800px;
+  margin: 0 auto;
+}
+
+
+li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+li:last-child {
+  margin-bottom: 20px;
+}
+
+li a:hover {
+  font-size: 25px;
+  background: #f6f6f6;
+}
+
+
+.score{
+  font-size: 30px;
+}

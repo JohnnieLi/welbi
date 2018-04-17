@@ -10,7 +10,8 @@ class App extends Component {
         return (
             <div className="App">
                 <header className="App-header">
-                    <h1 className="App-title">Welcome to the Trivia Challenge</h1>
+                    <h3 className="App-title">Welcome to the Trivia Challenge</h3>
+	                <span>Author: <a href="https://github.com/JohnnieLi/welbi">Jiangqi Li</a></span>
                 </header>
                 <main>
                     <Switch>
