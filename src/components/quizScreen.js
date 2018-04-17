@@ -10,61 +10,71 @@ class Quiz extends React.Component {
     questions = [
         {
             id: 1,
-            content:"test1",
+            category:'Math',
+            content:"1+2=3",
             answer: true
         },
 
         {
             id: 2,
-            content:"test2",
-            answer: true
+            category:'Math',
+            content:"6 + 66 = 666",
+            answer: false
         },
 
         {
             id: 3,
-            content:"test3",
+            category:'Math',
+            content:"88 / 0 = 0",
             answer: false
         },
 
         {
             id: 4,
-            content:"test4",
-            answer: false
-        },
-
-        {
-            id: 5,
-            content:"test5",
-            answer: false
-        },
-        {
-            id: 6,
-            content:"test6",
+            category:'Math',
+            content:"30% of x is equal to 0.3x",
             answer: true
         },
 
         {
+            id: 5,
+            category:'Math',
+            content:"\"x is at most equal to 9\" is written mathematically as x < 9.",
+            answer: false
+        },
+        {
+            id: 6,
+            category:'Math',
+            content:"The set of ordered pairs {(6,4),(2,-5),(-2,4),(6,-4)} is a function.",
+            answer: false
+        },
+
+        {
             id: 7,
-            content:"test7",
+            category:'Math',
+            content:"The additive inverse of -10 is 10.",
             answer: true
         },
 
         {
             id: 8,
-            content:"test8",
-            answer: false
+            category:'JavaScript',
+            content:"What is the value of !!function(){}",
+            answer: true
         },
 
         {
             id: 9,
-            content:"test9",
+            category:'JavaScript',
+            content:"As [] is true, []==true should also be true. right?",
             answer: false
         },
 
         {
             id: 10,
-            content:"test10",
-            answer: false
+            category:'JavaScript',
+            content:"the value of 4+3+2+\"1\" will be 91",
+            answer: true
         }
     ];
 

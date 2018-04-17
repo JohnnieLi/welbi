@@ -10,7 +10,7 @@ const results = (state = [], action) => {
                 }
             ];
         case 'CLEAR_RESULTS':
-            state = []
+            state = [];
             return state;
         default:
             return state
